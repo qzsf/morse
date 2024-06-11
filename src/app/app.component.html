@@ -1,0 +1,54 @@
+<main id="main">
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <svg style="width: 24px;margin-right:.5em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88"><path d="M17.89 0h88.9c8.85 0 16.1 7.24 16.1 16.1v90.68c0 8.85-7.24 16.1-16.1 16.1H16.1c-8.85 0-16.1-7.24-16.1-16.1v-88.9C0 8.05 8.05 0 17.89 0zm9.39 31.06h24.77l9.43 36.97 9.46-36.97H95.6v60.76H80.24V45.5L68.38 91.82H54.47L42.64 45.5v46.32H27.28V31.06z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+        <span class="fs-4">Morse Code</span>
+      </a>
+    </header>
+
+    <h1 class="display-5">Code <button class="btn btn-primary btn-lg" type="button" (click)="reset($event)">Clear Code</button></h1>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-3">
+        <p class="col-md-12 fs-4">
+          {{code.join(' ')}}
+        </p>
+      </div>
+    </div>
+    <h1 class="display-5">Text</h1>
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-3">
+        
+        <p class="col-md-12 fs-4">
+          {{letter.join('')}}
+        </p>
+        
+      </div>
+    </div>
+
+    <!-- <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>Change the background</h2>
+          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix
+            and match with additional component themes and more.</p>
+          <button class="btn btn-outline-light" type="button">Example button</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Add borders</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
+            look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+            content for equal-height.</p>
+          <button class="btn btn-outline-secondary" type="button">Example button</button>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2024
+    </footer> -->
+  </div>
+</main>
